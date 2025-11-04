@@ -14,7 +14,7 @@ if (!mapboxKey) {
 }
 
 const envFileContent = `export const environment = {
-  mapboxToken: '${mapboxKey}',
+  mapboxKey: '${mapboxKey}',
 };
 `;
 
