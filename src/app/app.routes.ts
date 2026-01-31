@@ -7,17 +7,17 @@ export const routes: Routes = [
   {
     path: 'fullscreen',
     component: FullscreenMapPage,
-    title: 'Fullscreen Map',
+    title: 'FullScreen Map',
   },
   {
     path: 'markers',
     component: MarkersPage,
-    title: 'Markers Map',
+    title: 'Marcadores',
   },
   {
     path: 'houses',
     component: HousesPage,
-    title: 'Houses Map',
+    title: 'Propiedades disponibles',
   },
   {
     path: '**',
