@@ -83,4 +83,17 @@ export class MarkersPage implements AfterViewInit {
       center: lngLat,
     });
   }
+
+  // debemos eliminar el marcador del mapa y del array de marcadores
+  deleteMarker(marker: Marker) {
+    if (!this.map()) return;
+    const map = this.map()!;
+
+    // eliminar del mapa
+    marker.mapboxMarker.remove();
+
+    // eliminar del array
+    this.markers.set(this.markers().filter((m) => m.id !== marker.id));
+    // this.markers.update(this.markers().filter((m) => m.id !== marker.id));
+  }
 }
